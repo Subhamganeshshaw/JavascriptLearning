@@ -1,0 +1,43 @@
+let student=[{
+     fname:"subham",
+     lname:"shaw",
+     rnum:"1",
+     pgrade:80.765,
+
+ },
+ {
+     fname:"jag",
+     lname:"shaw",
+     rnum:"2",
+     pgrade:82.96
+ },
+ {
+     fname:"sam",
+     lname:"singh",
+     rnum:"3",
+    pgrade:56.89
+ },
+ {
+     fname:"adi",
+     lname:"saha",
+     rnum:"4",
+    pgrade:64
+ },
+ {
+     fname:"ganesh",
+     lname:"shaw",
+     rnum:"5",
+    pgrade:89.20
+ },
+ {
+     fname:"laxmi",
+     lname:"ram",
+     rnum:"6",
+    pgrade:79.99
+ }];
+
+ const result=student
+  .filter(student => student.pgrade >= 80)
+  .map(student => `${student.fname} ${student.lname}${student.rnum}`);
+  
+console.log(result);
